@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD accompagnant une bibliographie :-->
+<!ELEMENT bibliographie (livre*,article*)>
+<!ELEMENT livre (titre,auteur+,tome*,edition)>
+<!ATTLIST livre num CDATA #IMPLIED>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (#PCDATA|prenom|nom)*>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT tome (NombrePages,titre?)>
+<!ATTLIST tome num CDATA #IMPLIED>
+<!ELEMENT NombrePages (#PCDATA)> 
+<!ELEMENT edition (MaisonEdition,lieuEdition,lieuImpression,ISBN)>
+<!ELEMENT MaisonEdition (#PCDATA)> 
+<!ELEMENT lieuEdition (#PCDATA)>
+<!ELEMENT lieuImpression (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT article (titre,auteur+,RefPublication,opinionperso?)>
+<!ATTLIST article num CDATA #IMPLIED>
+<!ELEMENT RefPublication (NomJournal,Nombre_Pages,AnneePubli,NumJournal)>
+<!ELEMENT NomJournal (#PCDATA)>
+<!ELEMENT Nombre_Pages (#PCDATA)>
+<!ELEMENT AnneePubli (#PCDATA)>
+<!ELEMENT NumJournal (#PCDATA)>
+<!ELEMENT opinionperso (#PCDATA)>

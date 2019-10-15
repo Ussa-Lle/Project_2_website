@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--DTD accompagnant une bibliographie :-->
+
+<!ELEMENT bibliographie (livre*,article*)>
+	<!ELEMENT livre (titre,auteur+,tome,edition)>
+	<!ATTLIST livre num CDATA #IMPLIED>
+		<!ELEMENT titre (#PCDATA)>
+		<!ATTLIST titre soustitre CDATA #IMPLIED>
+		<!ELEMENT auteur (#PCDATA|prenom|nom)*>
+			<!ELEMENT prenom (#PCDATA)>
+			<!ELEMENT nom (#PCDATA)>
+		<!ELEMENT tome EMPTY><!ATTLIST tome num CDATA #IMPLIED><!ATTLIST tome NombrePages CDATA #IMPLIED>	
+			<!ELEMENT NombrePages (#PCDATA)> 
+		<!ELEMENT edition (MaisonEdition,lieuEdition,lieuImpression,ISBN)>
+			<!ELEMENT MaisonEdition (#PCDATA)> 
+			<!ELEMENT lieuEdition (#PCDATA)>
+			<!ELEMENT lieuImpression (#PCDATA)>
+		    <!ELEMENT ISBN (#PCDATA)>
+	<!ELEMENT article (titre,auteur+,RefPublication,opinionperso?)>
+	<!ATTLIST article num CDATA #IMPLIED>
+		<!ELEMENT RefPublication (Journal,Nombre_Pages,NumJournal)>
+		<!ELEMENT Journal (#PCDATA)><!ATTLIST Journal nom_journal CDATA "Feuille de Chou"><!ATTLIST Journal annee (2000|2001|2002|avant_2000|inconnue) "inconnue">
+		<!ELEMENT Nombre_Pages (#PCDATA)>
+		<!ELEMENT NumJournal (#PCDATA)>
+		<!ELEMENT opinionperso (#PCDATA)>

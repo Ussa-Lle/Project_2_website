@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!ELEMENT doc (#PCDATA|taggersent|ref)*>
+<!ELEMENT ref (#PCDATA|author|email)*>
+<!ELEMENT taggersent (#PCDATA|taggertoken)*>
+<!ELEMENT taggertoken (#PCDATA)>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+
+<!ATTLIST taggertoken
+wordform CDATA #IMPLIED
+lemma CDATA #IMPLIED
+pos CDATA #IMPLIED>
+
+
+
