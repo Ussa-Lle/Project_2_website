@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="application/xml" href="styleAccueil.xsl"?>
+
+<racine>
+  <page>
+    <titre>Document Structuré</titre>
+    <corps>
+      <titre2>Accueil</titre2>
+      <accueil>
+        <paragraphe>
+          <texte>Dans ce site, nous allons partager avec vous tous les exercices faits dans le cadre du cours intitulé "Document Structuré" assuré par Serge FLEURY et Ioana GALLERON. Nous devions faire 6 exercices au minimum dont 3 obligatoires parmi 17 exercices donnés. Les exercices obligatoires sont les suivants : </texte>
+          <liste>
+            <element lien="./exercices/exercice3.xml" titre="TEI">Exercice 3</element>
+            <element lien="./exercices/exercice13.xml" titre="Extraction dans les Fils RSS du Monde">Exercice 13</element>
+            <element lien="./exercices/exercice16.xml" titre="Un dictionnaire">Exercice 16</element>
+          </liste>
+        </paragraphe>
+        <paragraphe>
+          <texte>Pour certains exercices, il y a deux versions différentes : ceux faits par Alican et d'autres faits par Oussama. Nous les avons marqué au debut des exercices. </texte>
+        </paragraphe>
+      </accueil>
+    </corps>
+  </page>
+</racine>
